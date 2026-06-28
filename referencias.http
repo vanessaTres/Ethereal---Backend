@@ -1,0 +1,23 @@
+###Teste
+GET http://localhost:3000/
+
+
+### Cadastrar usuário
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Vanessa Tres",
+  "email": "vanessa@email.com",
+  "senha": "123",
+  "cpf": "123.456.789-00"
+}
+
+### Login
+POST http://localhost:3000/usuarios/login
+Content-Type: application/json
+
+{
+  "email": "vanessa@email.com",
+  "senha": "123"
+}
