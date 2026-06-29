@@ -19,7 +19,7 @@ await servidor.register(cors, {
 
 
 servidor.get('/', async (request, reply) => {
-  return { mensagem: 'API de Maquiagens Ethereal rodando!' }
+  return { mensagem: 'API Ethereal rodando!' }
 })
 
 

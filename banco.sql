@@ -41,9 +41,18 @@ CREATE TABLE itens_pedido (
     quantidade INTEGER NOT NULL,
     preco_unitario DECIMAL(10,2) NOT NULL
 );
+
 -- 1. Limpar os dados antigos para evitar duplicidade ou conflito de ID
 TRUNCATE TABLE itens_pedido, pedidos, produtos, categorias RESTART IDENTITY CASCADE;
 
+INSERT INTO categorias (nome) VALUES 
+('Bases'),
+('Pós'),
+('Sombras'),
+('Blushes'),
+('Batons'),
+('Iluminadores'),
+('Delineadores');
 
 -- Categoria: Bases
 INSERT INTO produtos (id_categoria, nome, preco, descricao, imagem_url) VALUES
